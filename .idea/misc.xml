@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/mvc/pom.xml" />
         <option value="$PROJECT_DIR$/04-mvc/pom.xml" />
         <option value="$PROJECT_DIR$/interceptor/pom.xml" />
+        <option value="$PROJECT_DIR$/rest/pom.xml" />
       </list>
     </option>
   </component>

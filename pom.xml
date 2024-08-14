@@ -36,6 +36,7 @@
         <module>03-hello</module>
         <module>04-mvc</module>
         <module>05-interceptor</module>
+        <module>06-rest</module>
     </modules>
 
     <!--管理依赖的jar包坐标信息-->
@@ -47,6 +48,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.github.xiaoymin</groupId>
+            <artifactId>knife4j-spring-boot-starter</artifactId>
+            <version>3.0.3</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
