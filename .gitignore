@@ -1,0 +1,22 @@
+# macOS system files
+.DS_Store
+
+# Node.js dependencies
+node_modules/
+
+# Logs
+*.log
+
+# IDE project files
+.idea/
+.vscode/
+
+# Compiled output
+*.class
+*.o
+
+# Java build directories
+target/
+out/
+
+
