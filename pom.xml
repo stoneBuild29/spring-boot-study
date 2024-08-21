@@ -38,6 +38,7 @@
         <module>05-interceptor</module>
         <module>06-rest</module>
         <module>07-jpa</module>
+        <module>08-mbp</module>
     </modules>
 
     <!--管理依赖的jar包坐标信息-->
@@ -68,8 +69,23 @@
         </dependency>
     </dependencies>
     <dependencyManagement>
-        <dependencies>
-        </dependencies>
+       <dependencies>
+           <dependency>
+               <groupId>com.baomidou</groupId>
+               <artifactId>mybatis-plus-boot-starter</artifactId>
+               <version>3.4.2</version>
+           </dependency>
+           <dependency>
+               <groupId>com.alibaba</groupId>
+               <artifactId>druid-spring-boot-starter</artifactId>
+               <version>1.2.5</version>
+           </dependency>
+           <dependency>
+               <groupId>com.baomidou</groupId>
+               <artifactId>mybatis-plus-generator</artifactId>
+               <version>3.4.1</version>
+           </dependency>
+       </dependencies>
     </dependencyManagement>
 
     <!--配置项目的构建信息-->
