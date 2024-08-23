@@ -45,7 +45,7 @@ The project was achieved after I have copied once.I have to understand the inter
 
 * Next, I will add extra functions based on this situation.For example, the project can not implement the auto-fill of factors and complex functions extands the fundamental methods.
 
-  ![截屏2024-08-22 09.34.58](/Users/scarlet/code/github/pic/workList/截屏2024-08-22 09.34.58.png)
+  ![截屏2024-08-22 09.34.58](https://cdn.jsdelivr.net/gh/stoneBuild29/MyPictures@main/upload/%E6%88%AA%E5%B1%8F2024-08-22%2009.34.58.png)
 
 ***
 
