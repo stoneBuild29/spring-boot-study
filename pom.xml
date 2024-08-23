@@ -39,6 +39,7 @@
         <module>06-rest</module>
         <module>07-jpa</module>
         <module>08-mbp</module>
+        <module>09-MyBatis</module>
     </modules>
 
     <!--管理依赖的jar包坐标信息-->

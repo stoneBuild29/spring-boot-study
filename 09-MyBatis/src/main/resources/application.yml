@@ -1,0 +1,85 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: lHgfP?EsP4eH
+    druid:
+      # 连接池初始化时创建的连接数量
+      initialSize: 5
+      # 连接池中保持的最小空闲连接数量
+      minIdle: 5
+      # 连接池中允许的最大连接数
+      maxActive: 20
+      # 获取连接时的最大等待时间(毫秒)
+      maxWait: 60000
+      # 连接池中检测空闲连接的时间间隔(毫秒)
+      timeBetweenEvictionRunsMillis: 60000
+      # 连接在池中保持的最小空闲时间(毫秒)
+      minEvictableIdleTimeMillis: 300000
+      # 用于检查连接是否有效的SQL查询
+      validationQuery: SELECT 1
+      # 是否在空闲时检查连接的有效性
+      testWhileIdle: true
+      # 是否在从池中借用连接时检查连接的有效性
+      testOnBorrow: false
+      # 是否在返回连接到池时检查连接的有效性
+      testOnReturn: false
+      # 监控配置
+      stat-view-servlet:
+        # 启用Druid的监控页面
+        enabled: true
+        login-username: druid
+        login-password: 123456
+        # 启用重置数据功能
+        reset-enable: false
+        # 监控页面的访问路径
+        url-pattern: "/druid/*"
+        # 可访问监控系统的IP地址列表（白名单）
+        # allow: 127.0.0.1
+        # 禁止访问监控系统的IP地址列表(黑名单)
+        # deny:
+      # 配置扩展插件，常用的插件有：监控统计用的stat、日志用的slf4j、防御SQL
+      # 注入的wall
+      filters: stat,wall,slf4j
+      # 用来打开SQL参数化合并监控和慢SQL记录
+      connectionProperties: druid.stat.mergeSql-true;druid.stat.slowSqlMillis=5000
+      # 合并多个DruidDataSource的监控数据
+      useGlobalDataSource: true
+      #开启web监控(Web监控、URI监控、Session监控)
+      web-stat-filter:
+        # 开启web监控
+        enabled: true
+        # 需要监控的路径
+        url-pattern: /*
+        # 不监控静态文件和监控系统自己的请求
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+        # 统计请求调用链
+        profile-enable: true
+      # 开启Spring监控
+      aop-patterns: com.stone.boot.*.controller.*, com.stone.boot.*.service.*, com.stone.boot.*.mapper.*
+      # 日志配置
+      filter:
+        slf4j:
+          enabled: true
+          statment-executable-sql-log-enable: true
+
+# 日志输出级别
+logging:
+  level:
+    # 输出SQL语句
+    druid.sql.Statement: debug
+    # 输出查询结果
+    druid.sql.ResultSet: debug
+
+
+# WEB配置
+server:
+  port: 8080
+  servlet:
+    context-path: /springboot
+    session:
+      timeout: 60
+
+
+
