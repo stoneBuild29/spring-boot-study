@@ -40,6 +40,7 @@
         <module>07-jpa</module>
         <module>08-mbp</module>
         <module>09-MyBatis</module>
+        <module>10-transaction</module>
     </modules>
 
     <!--管理依赖的jar包坐标信息-->
